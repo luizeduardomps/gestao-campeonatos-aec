@@ -4,9 +4,14 @@
 
 **Descrição do projeto:** Aplicação web responsiva desenvolvida para gerenciar e divulgar o 1º Campeonato de Futebol 7 da AEC. O sistema permite o cadastro de times e jogadores, além de exibir a tabela de classificação e próximos jogos. O projeto consome uma API local (JSON Server) para dados do torneio e uma API pública para a previsão do tempo nos dias de jogo.
 
-**Prototipação no Figma:** https://www.figma.com/design/9zAXHil8vW4nC4XTbg2AQM/gestao-campeonatos-aec?node-id=0-1&t=vK8sQqbf2f3TU2pX-1
+**Documentação do projeto:**
+Para entender as regras de negócio, o escopo e a arquitetura técnica da aplicação, consulte os documentos abaixo:
+* [Product Requirements Document (PRD)](./docs/prd.md) - Visão geral, atores e histórias de usuário.
+* [Especificação Técnica (Tech Spec)](./docs/spec.md) - Diagrama de banco de dados (DER), dicionário de dados e rotas da API (JSON Server).
 
-**Design System:** [Link para a documentação do Design System - a ser preenchido]
+**Prototipação no Figma:** [Acessar protótipo do Campeonato AEC](https://www.figma.com/design/9zAXHil8vW4nC4XTbg2AQM/gestao-campeonatos-aec?node-id=0-1&t=vK8sQqbf2f3TU2pX-1)
+
+**Design System:** [Ver documentação do Design System](./docs/design-system.md)
 
 **Framework CSS:** Bootstrap
 
