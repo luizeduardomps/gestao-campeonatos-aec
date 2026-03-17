@@ -58,7 +58,7 @@
 
 ## Instruções de Execução
 
-1. Clone o repositório: `git clone `
+1. Clone o repositório: `git clone https://github.com/luizeduardomps/gestao-campeonatos-aec.git`
 2. Acesse a pasta do projeto: `cd gestao-campeonatos-aec`
 3. Instale as dependências: `npm install`
 4. Inicie o JSON Server (API Fake): `npm run server` (ou o comando que configuraremos no package.json)
