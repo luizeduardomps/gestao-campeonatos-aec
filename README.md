@@ -10,6 +10,7 @@ Para entender as regras de negócio, o escopo e a arquitetura técnica da aplica
 * [Especificação Técnica (Tech Spec)](./docs/spec.md) - Diagrama de banco de dados (DER), dicionário de dados e rotas da API (JSON Server).
 
 **Prototipação no Figma:** [Acessar protótipo do Projeto](https://www.figma.com/design/9zAXHil8vW4nC4XTbg2AQM/gestao-campeonatos-aec?node-id=0-1&t=vK8sQqbf2f3TU2pX-1)
+
 **Prototipação no Stitch:** [Acessar protótipo do Projeto](https://stitch.withgoogle.com/projects/1915889823401437527)
 
 **Design System:** [Ver documentação do Design System](./docs/design-system.md)
