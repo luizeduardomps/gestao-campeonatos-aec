@@ -15,11 +15,15 @@ Para entender as regras de negócio, o escopo e a arquitetura técnica da aplica
 
 **Design System:** [Ver documentação do Design System](./docs/design-system.md)
 
-**Framework CSS:** Bootstrap
+**Tecnologias, Dependências e Justificativas:**
 
-**Dependências:** * jQuery
-* jQuery Mask Plugin
-* JSON Server (Ambiente de Desenvolvimento)
+* **Framework CSS:** Bootstrap 5
+    * *Justificativa:* O Bootstrap foi escolhido por possuir um sistema de grid responsivo extremamente robusto, lidando perfeitamente com a adaptação da tabela de classificação entre Mobile e Desktop. Além disso, fornece componentes interativos nativos em JavaScript (como as *Tabs* que usaremos na página de Cadastro e os *Cards* editoriais) sem a necessidade de bibliotecas externas pesadas. O projeto no GitHub é altamente ativo, com documentação impecável e licença MIT, o que garante longevidade e segurança à aplicação.
+* **API Pública:** Open-Meteo API (Previsão do Tempo)
+    * *Justificativa:* O sistema consumirá esta API para exibir no Dashboard (Tela Inicial) a previsão do tempo para a cidade de Candói nos dias das partidas. Essa integração agrega valor real ao usuário (torcedores e jogadores), fornecendo dados úteis para o planejamento esportivo. A escolha pela Open-Meteo se dá pela sua confiabilidade open-source e ausência de necessidade de chaves de autenticação (API Keys).
+* **Bibliotecas Auxiliares:**
+    * jQuery & jQuery Mask Plugin (Para formatação de inputs no formulário).
+    * JSON Server (Para simulação do banco de dados e REST API local).
 
 **Link para o site em produção:** [Link do GitHub Pages - a ser preenchido ao final do semestre]
 
@@ -28,12 +32,12 @@ Para entender as regras de negócio, o escopo e a arquitetura técnica da aplica
 ## Checklist de Funcionalidades (Indicadores de Desempenho)
 
 ### RA1 - Utilizar Frameworks CSS para estilização e layouts responsivos
-- [ ] **ID 01** - Prototipa interfaces adaptáveis para mobile e desktop.
-- [ ] **ID 02** - Implementa layout responsivo com Framework CSS usando Flexbox ou Grid.
+- [x] **ID 01** - Prototipa interfaces adaptáveis para mobile e desktop.
+- [x] **ID 02** - Implementa layout responsivo com Framework CSS usando Flexbox ou Grid.
 - [ ] **ID 03** - Implementa layout responsivo com CSS puro, usando Flexbox ou Grid Layout.
 - [ ] **ID 04** - Utiliza componentes prontos de um Framework CSS (card, button) e componentes JS (modal, carousel).
 - [ ] **ID 05** - Cria layout fluido usando unidades relativas (vw, vh, %, em, rem).
-- [ ] **ID 06** - Aplica um Design System consistente em toda a aplicação.
+- [x] **ID 06** - Aplica um Design System consistente em toda a aplicação.
 - [ ] **ID 07** - Utiliza Sass (SCSS) aplicando variáveis, mixins e funções.
 - [ ] **ID 08** - Aplica tipografia responsiva ou tipografia fluida.
 - [ ] **ID 09** - Aplica técnicas de responsividade de imagens usando CSS (object-fit).
@@ -48,9 +52,9 @@ Para entender as regras de negócio, o escopo e a arquitetura técnica da aplica
 ### RA3 - Aplicar ferramentas para otimização do desenvolvimento
 - [ ] **ID 15** - Configura ambiente com Node.js e NPM.
 - [ ] **ID 16** - Utiliza boas práticas de versionamento no Git/GitHub.
-- [ ] **ID 17** - Mantém um README.md padronizado, com checklist preenchido.
+- [x] **ID 17** - Mantém um README.md padronizado, com checklist preenchido.
 - [ ] **ID 18** - Organiza arquivos do projeto de forma modular.
-- [ ] **ID 19** - Configura linters e formatadores (ESLint, Prettier).
+- [x] **ID 19** - Configura linters e formatadores (ESLint, Prettier).
 
 ### RA4 - Aplicar bibliotecas JavaScript para interatividade
 - [ ] **ID 20** - Utiliza jQuery para manipulação do DOM e interatividade.
