@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AEC Futebol 7 | Sede Esportiva</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg glass-nav sticky-top py-3">
+      <div class="container">
+        <a class="navbar-brand text-white" href="index.html">
+          <strong class="fw-black">AEC</strong> FUTEBOL 7
+        </a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon" style="filter: invert(1)"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav gap-3">
+            <li class="nav-item">
+              <a class="nav-link text-white fw-bold active" href="index.html"
+                >HOME</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white fw-bold" href="cadastro.html"
+                >CADASTRO</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white fw-bold" href="regulamento.html"
+                >REGULAMENTO</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="hero-section text-white">
+      <div class="container">
+        <div class="row align-items-center min-vh-50 py-5">
+          <div class="col-lg-7">
+            <span class="badge text-dark mb-3 px-3 py-2 aec-bg-tertiary"
+              >TEMPORADA 2026</span
+            >
+            <h1 class="hero-title">A Nova Era da<br />AEC FUTEBOL 7</h1>
+            <p class="lead mt-3 mb-4 opacity-75">
+              O prestígio do futebol society em uma cobertura exclusiva.
+              Acompanhe tabelas em tempo real, estatísticas e a agenda de jogos
+              da nossa Sede Esportiva.
+            </p>
+            <a href="#dashboard" class="btn btn-aec-yellow btn-lg px-5"
+              >VER TABELA</a
+            >
+          </div>
+          <div class="col-lg-5 text-center d-none d-lg-block">
+            <picture>
+              <source srcset="assets/img/lobinho.webp" type="image/webp" />
+              <img
+                src="assets/img/lobinho.png"
+                class="img-fluid aec-mascote"
+                alt="Mascote Lobinho da AEC sorrindo"
+              />
+            </picture>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="dashboard" class="container my-5">
+      <div class="row g-5">
+        <div class="col-lg-8">
+          <div class="d-flex align-items-center mb-4">
+            <h2 class="m-0 aec-text-primary">CLASSIFICAÇÃO GERAL</h2>
+          </div>
+
+          <div class="aec-card overflow-hidden">
+            <div class="table-responsive">
+              <table class="table table-borderless align-middle mb-0">
+                <thead class="border-bottom">
+                  <tr>
+                    <th scope="col" class="text-muted pb-3">POS</th>
+                    <th scope="col" class="text-muted pb-3">TIME</th>
+                    <th scope="col" class="text-muted pb-3 text-center">PTS</th>
+                    <th scope="col" class="text-muted pb-3 text-center">VIT</th>
+                    <th scope="col" class="text-muted pb-3 text-center">GOL</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="border-bottom">
+                    <td class="py-3">
+                      <strong class="fs-4 font-heading text-dark">1º</strong>
+                    </td>
+                    <td class="py-3">
+                      <div class="d-flex align-items-center">
+                        <div
+                          class="rounded-circle text-white d-flex justify-content-center align-items-center me-3"
+                          style="
+                            width: 48px;
+                            height: 48px;
+                            background-color: #002046;
+                          "
+                        >
+                          AEC
+                        </div>
+                        <strong class="text-dark">AEC Master</strong>
+                      </div>
+                    </td>
+                    <td class="py-3 text-center">
+                      <strong class="fs-4 font-heading text-dark">12</strong>
+                    </td>
+                    <td class="py-3 text-center text-muted">4</td>
+                    <td class="py-3 text-center text-muted">18</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3">
+                      <strong class="fs-4 font-heading text-dark">2º</strong>
+                    </td>
+                    <td class="py-3">
+                      <div class="d-flex align-items-center">
+                        <div
+                          class="rounded-circle text-dark d-flex justify-content-center align-items-center me-3"
+                          style="
+                            width: 48px;
+                            height: 48px;
+                            background-color: #ffcc00;
+                          "
+                        >
+                          TJR
+                        </div>
+                        <strong class="text-dark">Tijuca Rovers</strong>
+                      </div>
+                    </td>
+                    <td class="py-3 text-center">
+                      <strong class="fs-4 font-heading text-dark">10</strong>
+                    </td>
+                    <td class="py-3 text-center text-muted">3</td>
+                    <td class="py-3 text-center text-muted">14</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="aec-card mb-4">
+            <h6
+              class="text-muted mb-1 text-uppercase fw-bold"
+              style="letter-spacing: 1px; font-size: 0.8rem"
+            >
+              Sede da AEC
+            </h6>
+            <h5 class="fw-bold mb-3 aec-text-primary">Condições de Jogo</h5>
+            <div class="d-flex align-items-center">
+              <h1 class="display-4 fw-bold mb-0 me-3 font-heading text-dark">
+                22°C
+              </h1>
+              <div class="fs-1">☀️</div>
+            </div>
+            <p class="text-muted mt-2 mb-0">Céu limpo ideal para a partida.</p>
+          </div>
+
+          <h4 class="mb-4 mt-5 aec-text-primary">PRÓXIMOS JOGOS</h4>
+          <div class="aec-card p-0 mb-3">
+            <div
+              class="p-3 border-bottom d-flex justify-content-between align-items-center"
+              style="background-color: #f3f4f5"
+            >
+              <small class="text-muted fw-bold">SÁBADO • 14:00</small>
+              <span class="badge text-dark aec-bg-tertiary">LIVE</span>
+            </div>
+            <div class="p-4 d-flex justify-content-between align-items-center">
+              <strong class="fs-6 text-dark">AEC Master</strong>
+              <span class="badge bg-light text-muted px-2 py-1 border">VS</span>
+              <strong class="fs-6 text-dark">Tijuca</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer
+      class="py-4 mt-5 text-center text-white"
+      style="background-color: #33628b"
+    >
+      <div class="container">
+        <small
+          >&copy; 2026 Associação Esportiva de Candói. Todos os direitos
+          reservados.</small
+        >
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

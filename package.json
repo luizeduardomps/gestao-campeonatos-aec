@@ -1,0 +1,31 @@
+{
+  "name": "gestao-campeonatos-aec",
+  "version": "1.0.0",
+  "description": "Este projeto tem como objetivo implementar uma aplicação web responsiva para gerenciar e divulgar o 1º Campeonato de Futebol 7 da AEC. O sistema permite o cadastro de times e jogadores, além de exibir a tabela de classificação e próximos jogos. O frontend consome uma API local (JSON Server) para dados do torneio e uma API pública para a previsão do tempo nos dias de jogo.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "sass:watch": "sass --watch assets/scss/style.scss assets/css/style.css",
+    "json:server": "json-server --watch db.json",
+    "format": "prettier --write \"**/*.{html,css,scss,js}\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luizeduardomps/gestao-campeonatos-aec.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luizeduardomps/gestao-campeonatos-aec/issues"
+  },
+  "homepage": "https://github.com/luizeduardomps/gestao-campeonatos-aec#readme",
+  "devDependencies": {
+    "eslint": "^10.4.1",
+    "json-server": "^1.0.0-beta.15",
+    "prettier": "^3.8.3",
+    "sass": "^1.100.0"
+  }
+}

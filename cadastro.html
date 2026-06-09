@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro | AEC Futebol 7</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg glass-nav sticky-top py-3">
+      <div class="container">
+        <a class="navbar-brand text-white" href="index.html">
+          <strong class="fw-black">AEC</strong> FUTEBOL 7
+        </a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon" style="filter: invert(1)"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav gap-3">
+            <li class="nav-item">
+              <a class="nav-link text-white fw-bold" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white fw-bold active" href="cadastro.html"
+                >CADASTRO</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white fw-bold" href="regulamento.html"
+                >REGULAMENTO</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header
+      class="hero-section text-white py-4"
+      style="
+        min-height: auto;
+        border-radius: 0 0 1rem 1rem;
+        margin-bottom: 2rem;
+      "
+    >
+      <div class="container text-center">
+        <h1 class="hero-title" style="font-size: clamp(2rem, 3vw, 3rem)">
+          Gestão do Campeonato
+        </h1>
+        <p class="lead opacity-75">
+          Inscrição oficial de atletas e agremiações AEC
+        </p>
+      </div>
+    </header>
+
+    <main class="container my-5" style="max-width: 800px">
+      <div class="aec-card">
+        <ul class="nav nav-tabs mb-4" id="cadastroTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active font-heading fw-bold"
+              id="jogador-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#jogador"
+              type="button"
+              role="tab"
+              style="color: var(--aec-primary)"
+            >
+              NOVO JOGADOR
+            </button>
+          </li>
+        </ul>
+
+        <div class="tab-content" id="cadastroTabContent">
+          <div class="tab-pane fade show active" id="jogador" role="tabpanel">
+            <form
+              id="form-jogador"
+              action="#"
+              method="POST"
+              class="needs-validation"
+            >
+              <div class="row g-3">
+                <div class="col-md-12">
+                  <label
+                    for="nome_atleta"
+                    class="form-label fw-bold text-muted small"
+                    >NOME COMPLETO</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control bg-light border-0 py-2"
+                    id="nome_atleta"
+                    name="nome_atleta"
+                    placeholder="Ex: Luiz Eduardo"
+                    required
+                    minlength="3"
+                    maxlength="100"
+                  />
+                </div>
+
+                <div class="col-md-6">
+                  <label
+                    for="email_atleta"
+                    class="form-label fw-bold text-muted small"
+                    >E-MAIL</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control bg-light border-0 py-2"
+                    id="email_atleta"
+                    name="email_atleta"
+                    placeholder="atleta@email.com"
+                    required
+                  />
+                </div>
+
+                <div class="col-md-6">
+                  <label
+                    for="cpf_atleta"
+                    class="form-label fw-bold text-muted small"
+                    >CPF (Apenas números)</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control bg-light border-0 py-2"
+                    id="cpf_atleta"
+                    name="cpf_atleta"
+                    placeholder="00011122233"
+                    required
+                    pattern="^[0-9]{11}$"
+                    title="O CPF deve conter exatamente 11 números sem pontuação."
+                  />
+                </div>
+
+                <div class="col-md-6 mt-4">
+                  <label
+                    for="time_id"
+                    class="form-label fw-bold text-muted small"
+                    >SELECIONE O TIME</label
+                  >
+                  <select
+                    class="form-select bg-light border-0 py-2"
+                    id="time_id"
+                    name="time_id"
+                    required
+                  >
+                    <option value="" selected disabled>
+                      Escolha uma equipe...
+                    </option>
+                    <option value="1">AEC Master</option>
+                    <option value="2">Tijuca Rovers</option>
+                    <option value="3">Vila Futebol</option>
+                  </select>
+                </div>
+
+                <div class="col-md-6 mt-4">
+                  <label class="form-label fw-bold text-muted small d-block"
+                    >POSIÇÃO EM CAMPO</label
+                  >
+                  <div class="form-check form-check-inline mt-2">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="posicao_atleta"
+                      id="posLinha"
+                      value="linha"
+                      required
+                    />
+                    <label class="form-check-label" for="posLinha">Linha</label>
+                  </div>
+                  <div class="form-check form-check-inline mt-2">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="posicao_atleta"
+                      id="posGoleiro"
+                      value="goleiro"
+                    />
+                    <label class="form-check-label" for="posGoleiro"
+                      >Goleiro</label
+                    >
+                  </div>
+                </div>
+
+                <div class="col-12 mt-4">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value="aceito"
+                      id="termos_aceite"
+                      required
+                    />
+                    <label
+                      class="form-check-label small text-muted"
+                      for="termos_aceite"
+                    >
+                      Declaro que o atleta tem mais de 18 anos e concordo com o
+                      regulamento do 1º Campeonato de Futebol 7 da AEC.
+                    </label>
+                  </div>
+                </div>
+
+                <div class="col-12 mt-4 text-center">
+                  <button
+                    type="submit"
+                    class="btn btn-aec-yellow btn-lg w-100 py-3"
+                  >
+                    SALVAR CADASTRO ➔
+                  </button>
+                  <p class="small text-muted mt-3">
+                    ℹ️ Os dados serão validados pela comissão técnica.
+                  </p>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer
+      class="py-4 mt-5 text-center text-white"
+      style="background-color: #33628b"
+    >
+      <div class="container">
+        <small
+          >&copy; 2026 Associação Esportiva de Candói. Todos os direitos
+          reservados.</small
+        >
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
