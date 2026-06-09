@@ -1,0 +1,20 @@
+{
+  "name": "gestao-campeonatos-aec",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass:watch": "sass --watch assets/scss/style.scss assets/css/style.css",
+    "json:server": "json-server --watch db.json",
+    "format": "prettier --write \"**/*.{html,css,scss,js}\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^10.4.1",
+    "json-server": "^1.0.0-beta.15",
+    "prettier": "^3.8.3",
+    "sass": "^1.100.0"
+  }
+}
