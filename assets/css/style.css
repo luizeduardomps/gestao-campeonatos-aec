@@ -1,5 +1,3 @@
-@charset "UTF-8";
-
 body {
   font-family: "Roboto", sans-serif;
   background-color: #f8f9fa;
@@ -22,7 +20,7 @@ h6,
 }
 
 .aec-bg-tertiary {
-  background-color: #c49f1b !important;
+  background-color: #e4c03d !important;
 }
 
 .glass-nav {
@@ -33,7 +31,7 @@ h6,
 }
 
 .glass-nav .nav-link:hover {
-  color: #c49f1b !important;
+  color: #e4c03d !important;
 }
 
 .hero-section {
@@ -64,7 +62,7 @@ h6,
 }
 
 .btn-aec-yellow {
-  background-color: rgb(204, 170, 46);
+  background-color: rgb(208.9230769231, 170.1538461538, 29.0769230769);
   color: #ffffff;
   transform: translateY(-2px);
   font-family: "Montserrat", sans-serif;
@@ -74,7 +72,7 @@ h6,
   transition: all 0.3s ease;
 }
 .btn-aec-yellow:hover {
-  background-color: rgb(204, 170, 46);
+  background-color: rgb(208.9230769231, 170.1538461538, 29.0769230769);
   color: #ffffff;
   transform: translateY(-2px);
 }
@@ -150,3 +148,5 @@ h6,
   background-color: #ffcc00;
   color: #191c1d;
 }
+
+/*# sourceMappingURL=style.css.map */

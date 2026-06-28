@@ -1,13 +1,9 @@
 @use "sass:color";
-/* ==========================================================================
-   DESIGN SYSTEM: THE STADIUM ARCHIVE (AEC FUTEBOL 7)
-   ========================================================================== */
 
-/* 1. Variáveis de Cor e Tipografia */
 $aec-primary: #002046;
 $aec-primary-container: #1b365d;
 $aec-secondary: #33628b;
-$aec-tertiary: #745b00;
+$aec-tertiary: #e4c03d;
 $aec-surface: #f8f9fa;
 $aec-surface-low: #f3f4f5;
 $aec-surface-lowest: #ffffff;
@@ -16,16 +12,14 @@ $aec-shadow-ambient: 0 12px 40px rgba(25, 28, 29, 0.06);
 $font-heading: "Montserrat", sans-serif;
 $font-body: "Roboto", sans-serif;
 
-/* 2. Mixins (ID 07) */
 @mixin card-editorial {
   background-color: $aec-surface-lowest;
-  border: none !important; /* Regra de Ouro: Sem linhas */
+  border: none !important;
   border-radius: 0.75rem;
   box-shadow: $aec-shadow-ambient;
   padding: 1.5rem;
 }
 
-/* 3. Estilos Globais */
 body {
   font-family: $font-body;
   background-color: $aec-surface;
@@ -50,7 +44,6 @@ h6,
   background-color: $aec-tertiary !important;
 }
 
-/* 4. Navbar Glassmorphic */
 .glass-nav {
   background-color: rgba(27, 54, 93, 0.85) !important;
   backdrop-filter: blur(12px);
@@ -62,7 +55,6 @@ h6,
   color: $aec-tertiary !important;
 }
 
-/* 5. Hero Section (ID 05 e ID 08) */
 .hero-section {
   background: linear-gradient(
     135deg,
@@ -73,24 +65,20 @@ h6,
   margin-bottom: 3rem;
 
   .hero-title {
-    /* Tipografia Fluida (clamp) */
     font-size: clamp(2.5rem, 5vw, 4rem);
     font-weight: 900;
     letter-spacing: -0.02em;
   }
 }
 
-/* 6. Componentes Customizados */
 .aec-card {
   @include card-editorial;
 }
 
 .aec-card-header {
   background-color: $aec-surface-low;
-  /* As outras propriedades já estão sendo cuidadas pelas classes do Bootstrap no HTML */
 }
 
-/* Rodapé */
 .aec-footer {
   background-color: $aec-secondary;
 }
@@ -112,7 +100,6 @@ h6,
   }
 }
 
-/* 7. Responsividade de Imagens (ID 09) */
 .aec-mascote {
   width: 100%;
   max-width: 350px;
@@ -120,19 +107,15 @@ h6,
   object-fit: contain;
   filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.3));
 }
-/* ==========================================================================
-   8. ÁREA DO REGULAMENTO - CSS GRID PURO (ID 03, ID 09)
-   ========================================================================== */
 
 .regulamento-grid {
   display: grid;
-  grid-template-columns: 1fr; /* No Mobile, fica tudo numa coluna única */
-  gap: 2.5rem; /* Espaçamento generoso seguindo o "The Stadium Archive" */
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
 
   @media (min-width: 992px) {
-    /* No Desktop, divide em 2 colunas assimétricas (Sidebar com 320px e o resto para o texto) */
     grid-template-columns: 320px 1fr;
-    align-items: start; /* Impede que a sidebar estique verticalmente */
+    align-items: start;
   }
 }
 
@@ -149,24 +132,23 @@ h6,
   height: 150px;
   margin: 0 auto;
   border-radius: 50%;
-  overflow: hidden; /* Garante o recorte circular perfeito */
+  overflow: hidden;
   background-color: $aec-surface;
 }
 
 .img-mascote-perfil {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* ID 09: Imagem preenche o círculo sem distorcer */
+  object-fit: cover;
   object-position: center;
 }
 
 .regulamento-conteudo {
   display: flex;
   flex-direction: column;
-  gap: 2rem; /* Separação aérea entre os cards editoriais */
+  gap: 2rem;
 }
 
-/* Escudos dos Times (Tabela) */
 .team-badge {
   width: 48px;
   height: 48px;
@@ -176,16 +158,15 @@ h6,
   border-radius: 50%;
   font-weight: 700;
   font-size: 0.9rem;
-  flex-shrink: 0; /* Impede que o círculo amasse se o nome do time for grande */
+  flex-shrink: 0;
 }
 
-/* Variações de Cores para os dados de exemplo */
 .team-badge-aec {
   background-color: $aec-primary;
   color: $aec-surface-lowest;
 }
 
 .team-badge-tjr {
-  background-color: #ffcc00; /* Amarelo Tijuca */
-  color: #191c1d; /* Texto escuro */
+  background-color: #ffcc00;
+  color: #191c1d;
 }
