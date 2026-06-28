@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 body {
   font-family: "Roboto", sans-serif;
   background-color: #f8f9fa;
@@ -22,7 +21,7 @@ h6,
 }
 
 .aec-bg-tertiary {
-  background-color: #c49f1b !important;
+  background-color: #d3aa14 !important;
 }
 
 .glass-nav {
@@ -33,7 +32,7 @@ h6,
 }
 
 .glass-nav .nav-link:hover {
-  color: #c49f1b !important;
+  color: #c2a12a !important;
 }
 
 .hero-section {
@@ -41,6 +40,7 @@ h6,
   border-radius: 0 0 2rem 2rem;
   margin-bottom: 3rem;
 }
+
 .hero-section .hero-title {
   font-size: clamp(2.5rem, 5vw, 4rem);
   font-weight: 900;
@@ -64,7 +64,7 @@ h6,
 }
 
 .btn-aec-yellow {
-  background-color: rgb(204, 170, 46);
+  background-color: rgb(65, 50.9913793103, 0);
   color: #ffffff;
   transform: translateY(-2px);
   font-family: "Montserrat", sans-serif;
@@ -73,8 +73,9 @@ h6,
   border-radius: 0.375rem;
   transition: all 0.3s ease;
 }
+
 .btn-aec-yellow:hover {
-  background-color: rgb(204, 170, 46);
+  background-color: rgb(168, 139, 31);
   color: #ffffff;
   transform: translateY(-2px);
 }
@@ -83,6 +84,7 @@ h6,
   width: 100%;
   max-width: 350px;
   height: auto;
+  -o-object-fit: contain;
   object-fit: contain;
   filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.3));
 }
@@ -92,6 +94,7 @@ h6,
   grid-template-columns: 1fr;
   gap: 2.5rem;
 }
+
 @media (min-width: 992px) {
   .regulamento-grid {
     grid-template-columns: 320px 1fr;
@@ -119,7 +122,9 @@ h6,
 .img-mascote-perfil {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
+  -o-object-position: center;
   object-position: center;
 }
 

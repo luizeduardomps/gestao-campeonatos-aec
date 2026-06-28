@@ -1,3 +1,4 @@
+@use "sass:color";
 /* ==========================================================================
    DESIGN SYSTEM: THE STADIUM ARCHIVE (AEC FUTEBOL 7)
    ========================================================================== */
@@ -8,6 +9,7 @@ $aec-primary-container: #1b365d;
 $aec-secondary: #33628b;
 $aec-tertiary: #745b00;
 $aec-surface: #f8f9fa;
+$aec-surface-low: #f3f4f5;
 $aec-surface-lowest: #ffffff;
 $aec-shadow-ambient: 0 12px 40px rgba(25, 28, 29, 0.06);
 
@@ -83,9 +85,20 @@ h6,
   @include card-editorial;
 }
 
+.aec-card-header {
+  background-color: $aec-surface-low;
+  /* As outras propriedades já estão sendo cuidadas pelas classes do Bootstrap no HTML */
+}
+
+/* Rodapé */
+.aec-footer {
+  background-color: $aec-secondary;
+}
+
 .btn-aec-yellow {
-  background-color: $aec-tertiary;
+  background-color: color.adjust($aec-tertiary, $lightness: -10%);
   color: #ffffff;
+  transform: translateY(-2px);
   font-family: $font-heading;
   font-weight: 700;
   border: none;
@@ -151,4 +164,28 @@ h6,
   display: flex;
   flex-direction: column;
   gap: 2rem; /* Separação aérea entre os cards editoriais */
+}
+
+/* Escudos dos Times (Tabela) */
+.team-badge {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 0.9rem;
+  flex-shrink: 0; /* Impede que o círculo amasse se o nome do time for grande */
+}
+
+/* Variações de Cores para os dados de exemplo */
+.team-badge-aec {
+  background-color: $aec-primary;
+  color: $aec-surface-lowest;
+}
+
+.team-badge-tjr {
+  background-color: #ffcc00; /* Amarelo Tijuca */
+  color: #191c1d; /* Texto escuro */
 }
