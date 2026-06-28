@@ -104,40 +104,7 @@
                     <th scope="col" class="text-muted pb-3 text-center">GOL</th>
                   </tr>
                 </thead>
-                <tbody>
-                  <tr class="border-bottom">
-                    <td class="py-3">
-                      <strong class="fs-4 font-heading text-dark">1º</strong>
-                    </td>
-                    <td class="py-3">
-                      <div class="d-flex align-items-center">
-                        <div class="team-badge team-badge-aec me-3">AEC</div>
-                        <strong class="text-dark">AEC Master</strong>
-                      </div>
-                    </td>
-                    <td class="py-3 text-center">
-                      <strong class="fs-4 font-heading text-dark">12</strong>
-                    </td>
-                    <td class="py-3 text-center text-muted">4</td>
-                    <td class="py-3 text-center text-muted">18</td>
-                  </tr>
-                  <tr>
-                    <td class="py-3">
-                      <strong class="fs-4 font-heading text-dark">2º</strong>
-                    </td>
-                    <td class="py-3">
-                      <div class="d-flex align-items-center">
-                        <div class="team-badge team-badge-tjr me-3">TJR</div>
-                        <strong class="text-dark">Tijuca Rovers</strong>
-                      </div>
-                    </td>
-                    <td class="py-3 text-center">
-                      <strong class="fs-4 font-heading text-dark">10</strong>
-                    </td>
-                    <td class="py-3 text-center text-muted">3</td>
-                    <td class="py-3 text-center text-muted">14</td>
-                  </tr>
-                </tbody>
+                <tbody></tbody>
               </table>
             </div>
           </div>
@@ -153,12 +120,17 @@
             </h6>
             <h5 class="fw-bold mb-3 aec-text-primary">Condições de Jogo</h5>
             <div class="d-flex align-items-center">
-              <h1 class="display-4 fw-bold mb-0 me-3 font-heading text-dark">
-                22°C
+              <h1
+                id="clima-temperatura"
+                class="display-4 fw-bold mb-0 me-3 font-heading text-dark"
+              >
+                --°C
               </h1>
-              <div class="fs-1">☀️</div>
+              <div id="clima-icone" class="fs-1">⏳</div>
             </div>
-            <p class="text-muted mt-2 mb-0">Céu limpo ideal para a partida.</p>
+            <p id="clima-descricao" class="text-muted mt-2 mb-0">
+              Buscando condições...
+            </p>
           </div>
 
           <h4 class="mb-4 mt-5 aec-text-primary">PRÓXIMOS JOGOS</h4>
@@ -189,5 +161,7 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>

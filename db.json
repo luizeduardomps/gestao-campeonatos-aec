@@ -1,0 +1,25 @@
+{
+  "classificacao": [
+    {
+      "id": "1",
+      "posicao": "1º",
+      "sigla": "AEC",
+      "nome": "AEC Master",
+      "pontos": 25,
+      "vitorias": 4,
+      "gols": 18,
+      "classeBadge": "team-badge-aec"
+    },
+    {
+      "id": "2",
+      "posicao": "2º",
+      "sigla": "TJR",
+      "nome": "Tijuca Rovers",
+      "pontos": 10,
+      "vitorias": 3,
+      "gols": 14,
+      "classeBadge": "team-badge-tjr"
+    }
+  ],
+  "atletas": []
+}

@@ -91,145 +91,200 @@
         <div class="tab-content" id="cadastroTabContent">
           <div class="tab-pane fade show active" id="jogador" role="tabpanel">
             <form
-              id="form-jogador"
-              action="#"
-              method="POST"
-              class="needs-validation"
+              id="formCadastro"
+              class="p-4 bg-white rounded shadow-sm border"
+              novalidate
             >
+              <h4 class="aec-text-primary mb-4">Dados do Atleta</h4>
+
               <div class="row g-3">
                 <div class="col-md-12">
-                  <label
-                    for="nome_atleta"
-                    class="form-label fw-bold text-muted small"
-                    >NOME COMPLETO</label
+                  <label for="nome" class="form-label fw-bold small"
+                    >Nome Completo *</label
                   >
                   <input
                     type="text"
-                    class="form-control bg-light border-0 py-2"
-                    id="nome_atleta"
-                    name="nome_atleta"
-                    placeholder="Ex: Luiz Eduardo"
+                    class="form-control"
+                    id="nome"
                     required
                     minlength="3"
-                    maxlength="100"
+                    placeholder="Digite seu nome completo"
                   />
+                  <div class="invalid-feedback">
+                    Por favor, insira um nome válido.
+                  </div>
                 </div>
 
                 <div class="col-md-6">
-                  <label
-                    for="email_atleta"
-                    class="form-label fw-bold text-muted small"
-                    >E-MAIL</label
+                  <label for="email" class="form-label fw-bold small"
+                    >E-mail *</label
                   >
                   <input
                     type="email"
-                    class="form-control bg-light border-0 py-2"
-                    id="email_atleta"
-                    name="email_atleta"
-                    placeholder="atleta@email.com"
+                    class="form-control"
+                    id="email"
                     required
+                    placeholder="atleta@email.com"
+                  />
+                  <div class="invalid-feedback">Insira um e-mail válido.</div>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="telefone" class="form-label fw-bold small"
+                    >Telefone/WhatsApp *</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="telefone"
+                    required
+                    placeholder="(00) 00000-0000"
                   />
                 </div>
 
                 <div class="col-md-6">
-                  <label
-                    for="cpf_atleta"
-                    class="form-label fw-bold text-muted small"
-                    >CPF (Apenas números)</label
+                  <label for="cpf" class="form-label fw-bold small"
+                    >CPF *</label
                   >
                   <input
                     type="text"
-                    class="form-control bg-light border-0 py-2"
-                    id="cpf_atleta"
-                    name="cpf_atleta"
-                    placeholder="00011122233"
+                    class="form-control"
+                    id="cpf"
                     required
-                    pattern="^[0-9]{11}$"
-                    title="O CPF deve conter exatamente 11 números sem pontuação."
+                    placeholder="000.000.000-00"
                   />
                 </div>
 
-                <div class="col-md-6 mt-4">
-                  <label
-                    for="time_id"
-                    class="form-label fw-bold text-muted small"
-                    >SELECIONE O TIME</label
+                <div class="col-md-6">
+                  <label for="posicao" class="form-label fw-bold small"
+                    >Posição Principal *</label
                   >
-                  <select
-                    class="form-select bg-light border-0 py-2"
-                    id="time_id"
-                    name="time_id"
-                    required
-                  >
+                  <select class="form-select" id="posicao" required>
                     <option value="" selected disabled>
-                      Escolha uma equipe
+                      Escolha sua posição...
                     </option>
-                    <option value="1">AEC Master</option>
-                    <option value="2">Tijuca Rovers</option>
-                    <option value="3">Vila Futebol</option>
+                    <option value="goleiro">Goleiro</option>
+                    <option value="zagueiro">Zagueiro</option>
+                    <option value="meio-campo">Meio-Campo</option>
+                    <option value="atacante">Atacante</option>
                   </select>
                 </div>
+              </div>
 
-                <div class="col-md-6 mt-4">
-                  <label class="form-label fw-bold text-muted small d-block"
-                    >POSIÇÃO EM CAMPO</label
+              <hr class="my-4" />
+              <h4 class="aec-text-primary mb-4">
+                Endereço (Integração ViaCEP)
+              </h4>
+
+              <div class="row g-3">
+                <div class="col-md-4">
+                  <label for="cep" class="form-label fw-bold small"
+                    >CEP *</label
                   >
-                  <div class="form-check form-check-inline mt-2">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="posicao_atleta"
-                      id="posLinha"
-                      value="linha"
-                      required
-                    />
-                    <label class="form-check-label" for="posLinha">Linha</label>
-                  </div>
-                  <div class="form-check form-check-inline mt-2">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="posicao_atleta"
-                      id="posGoleiro"
-                      value="goleiro"
-                    />
-                    <label class="form-check-label" for="posGoleiro"
-                      >Goleiro</label
-                    >
-                  </div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="cep"
+                    required
+                    placeholder="00000-000"
+                  />
                 </div>
 
-                <div class="col-12 mt-4">
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value="aceito"
-                      id="termos_aceite"
-                      required
-                    />
-                    <label
-                      class="form-check-label small text-muted"
-                      for="termos_aceite"
-                    >
-                      Declaro que o atleta tem mais de 18 anos e concordo com o
-                      regulamento do 1º Campeonato de Futebol 7 da AEC.
-                    </label>
-                  </div>
+                <div class="col-md-8">
+                  <label for="logradouro" class="form-label fw-bold small"
+                    >Rua / Logradouro</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control bg-light"
+                    id="logradouro"
+                    readonly
+                  />
                 </div>
 
-                <div class="col-12 mt-4 text-center">
-                  <button
-                    type="submit"
-                    class="btn btn-aec-yellow btn-lg w-100 py-3"
+                <div class="col-md-6">
+                  <label for="bairro" class="form-label fw-bold small"
+                    >Bairro</label
                   >
-                    SALVAR CADASTRO
-                  </button>
-                  <p class="small text-muted mt-3">
-                    ℹ️ Os dados serão validados pela comissão técnica.
-                  </p>
+                  <input
+                    type="text"
+                    class="form-control bg-light"
+                    id="bairro"
+                    readonly
+                  />
+                </div>
+
+                <div class="col-md-6">
+                  <label for="cidade" class="form-label fw-bold small"
+                    >Cidade</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control bg-light"
+                    id="cidade"
+                    readonly
+                  />
                 </div>
               </div>
+
+              <hr class="my-4" />
+
+              <div class="mb-3">
+                <label class="form-label fw-bold small d-block"
+                  >Categoria Desejada *</label
+                >
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="categoria"
+                    id="catLivre"
+                    value="livre"
+                    required
+                  />
+                  <label class="form-check-label" for="catLivre"
+                    >Série Livre</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="categoria"
+                    id="catMaster"
+                    value="master"
+                  />
+                  <label class="form-check-label" for="catMaster"
+                    >Série Master (35+)</label
+                  >
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="aceiteTermos"
+                    required
+                  />
+                  <label
+                    class="form-check-label text-muted small"
+                    for="aceiteTermos"
+                  >
+                    Confirmo que li e aceito o
+                    <a
+                      href="regulamento.html"
+                      class="aec-text-primary text-decoration-none fw-bold"
+                      >Regulamento do Campeonato</a
+                    >.
+                  </label>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-aec-yellow w-100 py-3 fs-5">
+                FINALIZAR CADASTRO
+              </button>
             </form>
           </div>
         </div>
@@ -245,6 +300,14 @@
       </div>
     </footer>
 
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- jQuery e jQuery Mask Plugin -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
+    <!-- Script Principal -->
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
