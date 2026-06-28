@@ -21,7 +21,7 @@ Para entender as regras de negócio, o escopo e a arquitetura técnica da aplica
 
 ## 🌐 Site em Produção - GitHub Pages
 
-- [Link do GitHub Pages - a ser preenchido ao final do semestre]
+- [Link do GitHub Pages](https://luizeduardomps.github.io/gestao-campeonatos-aec/index.html)
 
 ## 💻 Tecnologias e Dependências
 
@@ -52,7 +52,7 @@ Para entender as regras de negócio, o escopo e a arquitetura técnica da aplica
 - [x] **ID 11** - Implementa validação HTML nativa com mensagens de erro/sucesso.
 - [x] **ID 12** - Aplica expressões regulares (REGEX) para validações customizadas.
 - [x] **ID 13** - Utiliza elementos de seleção em formulários (checkbox, radio, select).
-- [ ] **ID 14** - Implementa leitura e escrita no Web Storage para persistir dados localmente. _(Pendente para a fase de JS)_
+- [x] **ID 14** - Implementa leitura e escrita no Web Storage para persistir dados localmente.
 
 ### RA3 - Aplicar ferramentas para otimização do desenvolvimento
 
@@ -64,14 +64,14 @@ Para entender as regras de negócio, o escopo e a arquitetura técnica da aplica
 
 ### RA4 - Aplicar bibliotecas JavaScript para interatividade
 
-- [ ] **ID 20** - Utiliza jQuery para manipulação do DOM e interatividade. _(Pendente para a fase de JS)_
-- [ ] **ID 21** - Integra e configura um plugin jQuery (jQuery Mask Plugin). _(Pendente para a fase de JS)_
+- [x] **ID 20** - Utiliza jQuery para manipulação do DOM e interatividade.
+- [x] **ID 21** - Integra e configura um plugin jQuery (jQuery Mask Plugin).
 
 ### RA5 - Efetuar requisições assíncronas (APIs)
 
-- [ ] **ID 22** - Realiza requisições assíncronas para uma API fake (JSON Server) para persistir dados. _(Pendente para a fase de JS)_
-- [ ] **ID 23** - Realiza requisições assíncronas para uma API fake para exibir dados. _(Pendente para a fase de JS)_
-- [ ] **ID 24** - Realiza requisições assíncronas para APIs públicas reais (ex: Open-Meteo). _(Pendente para a fase de JS)_
+- [x] **ID 22** - Realiza requisições assíncronas para uma API fake (JSON Server) para persistir dados.
+- [x] **ID 23** - Realiza requisições assíncronas para uma API fake para exibir dados.
+- [x] **ID 24** - Realiza requisições assíncronas para APIs públicas reais (ex: Open-Meteo).
 
 ---
 
