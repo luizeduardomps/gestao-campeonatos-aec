@@ -77,12 +77,14 @@ Para entender as regras de negócio, o escopo e a arquitetura técnica da aplica
 
 ## 🚀 Manual de Execução
 
-1. Clonar o repositório com `git clone https://github.com/luizeduardomps/gestao-campeonatos-aec.git`
+1. **Clonar o repositório:**
+   ```bash
+   git clone [https://github.com/luizeduardomps/gestao-campeonatos-aec.git](https://github.com/luizeduardomps/gestao-campeonatos-aec.git)
 2. Abrir o projeto no editor Visual Studio Code (VS Code).
 3. Abrir um terminal pelo VS Code apontando para o diretório raiz do projeto.
-4. Instalar as dependências contidas no `package.json` com o comando: `npm i`
-5. (Opcional) Instalar o JSON Server globalmente. Comando: `npm i -g json-server`
-6. Executar a API Fake (JSON Server) via execução explícita: `json-server --watch db.json --routes routes.json` (O serviço rodará em `localhost:3000`).
+4. Instalar as dependências contidas no `package.json` com o comando: `npm install`
+5. Executar a API Fake (Banco de Dados): No terminal, inicie o servidor local que contém os dados dos atletas e da classificação: `npm run backend`
+6. Executar o Compilador CSS: Se desejar modificar os estilos, abra um segundo terminal e inicie o observador do Sass: `npm run sass:watch`
 7. Executar o projeto frontend abrindo o arquivo `index.html` no seu navegador ou utilizando a extensão Live Server.---
 
 ## Telas da Aplicação
