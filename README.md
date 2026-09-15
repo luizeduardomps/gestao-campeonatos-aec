@@ -27,13 +27,18 @@ Para entender as regras de negócio, o escopo e a arquitetura técnica da aplica
 
 ## 💻 Tecnologias e Dependências
 
-- **Framework CSS (Bootstrap 5):** Escolhido por possuir um sistema de grid robusto para a tabela de classificação e componentes interativos nativos (modais, cards), dispensando bibliotecas pesadas.
-- **APIs Públicas:** 
-  - **Open-Meteo API:** Fornece a previsão do tempo ao vivo para a sede esportiva.
-  - **ViaCEP:** Preenche automaticamente o endereço da partida externa a partir do CEP.
-- **JavaScript & jQuery:** Utilizados para requisições assíncronas, manipulação do DOM e formatação de inputs (via jQuery Mask Plugin).
-- **JSON Server:** Utilizado para simular uma API REST e banco de dados local.
+**Framework CSS: Bootstrap 5**
+- **Justificativa:** A escolha do Bootstrap se deu pelo seu excelente e maduro sistema de Grid (ideal para a tabela de classificação) e pelo vasto ecossistema de componentes prontos (Modais, Cards e Formulários) que aceleraram a fidelidade com o protótipo. Além disso, o projeto possui altíssima atividade no GitHub, documentação impecável, licença MIT e, a partir da versão 5, não possui mais dependência do jQuery para seus componentes interativos, garantindo maior performance e suporte responsivo *mobile-first*.
 
+**APIs Públicas: Open-Meteo e ViaCEP**
+- **Justificativa:** 
+  - **Open-Meteo API:** Agrega muito valor ao negócio, pois permite informar aos atletas e mesários as condições climáticas exatas da sede esportiva em tempo real para os jogos (Futebol 7 ocorre em campo aberto). É robusta, gratuita e não exige chaves de autenticação (API Keys).
+  - **ViaCEP:** Melhora drasticamente a experiência do usuário (UX) no painel do mesário, automatizando o preenchimento de endereços para partidas realizadas fora da sede principal apenas com a digitação do CEP.
+
+**Bibliotecas JavaScript:**
+- **jQuery & jQuery Mask Plugin:** Utilizados pontualmente para manipulação ágil do DOM, requisições AJAX e aplicação de máscaras de formatação nos inputs (Telefone e CEP).
+- **JSON Server:** Utilizado para simular o banco de dados (API REST fake) e armazenar as súmulas e pontuações localmente durante o desenvolvimento.
+  
 ---
 
 ## ✅ Checklist | Indicadores de Desempenho (ID) dos Resultados de Aprendizagem (RA)
